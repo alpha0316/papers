@@ -15,28 +15,27 @@ function App() {
       marginInline :isMobile? 12: 40,
       display : 'flex',
       flexDirection : 'column',
-      gap : 40,
+      gap : 120,
       marginBottom : 120
     }}>
 
       <div style={{
-  position: 'fixed',
-  top: 0,
-  left: 0,
-  right: 0,
-  backgroundColor: 'white',
-  zIndex: 100,
-  padding: '20px',
-  borderBottom : '1px solid rgba(0,0,0,0.1)'
-  // boxShadow: '0 2px 4px rgba(0,0,0,0.1)',
+        position: 'fixed',
+        top: 0,
+        left: 0,
+        right: 0,
+        backgroundColor: 'white',
+        zIndex: 100,
+        padding: '20px',
+        borderBottom : '1px solid rgba(0,0,0,0.1)',
+  
+
 }}>
         
       <div style={{
         display : 'flex',
         alignItems : 'center',
-        justifyContent : 'space-between',
-    
-        
+        justifyContent : 'space-between',  
       }}>
         <div style={{
           display : 'flex',
@@ -116,6 +115,7 @@ function App() {
         flexDirection : 'column',
         gap : 24,
         marginInline :isMobile? 0 : 60,
+        marginTop : 74
       }}>
 
         <h1 style={{
@@ -135,14 +135,14 @@ function App() {
         { isMobile ? 
           <div style={{
             display: 'flex',
-            flexWrap: 'wrap', // Allow cards to wrap into a 2x2 grid
-            gap: 12, // Reduced gap for mobile
-            width: '100%', // Fit the container to the screen width
-            marginInline: 0, // No margin on mobile to maximize space
-            overflowX: 'auto', // Enable horizontal scrolling if needed
-            paddingBottom: 8, // Add padding to make room for scrollbar
-            scrollbarWidth: 'thin', // Firefox: Make scrollbar thinner
-            WebkitOverflowScrolling: 'touch', // Smooth scrolling on iOS
+            flexWrap: 'wrap', 
+            gap: 12, 
+            width: '100%',
+            marginInline: 0,
+            overflowX: 'auto',
+            paddingBottom: 8,
+            scrollbarWidth: 'thin', 
+            WebkitOverflowScrolling: 'touch',
           }}>
 
             <div style={{
