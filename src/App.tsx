@@ -20,9 +20,22 @@ function App() {
     }}>
 
       <div style={{
+  position: 'fixed',
+  top: 0,
+  left: 0,
+  right: 0,
+  backgroundColor: 'white',
+  zIndex: 100,
+  padding: '20px',
+  borderBottom : '1px solid rgba(0,0,0,0.1)'
+  // boxShadow: '0 2px 4px rgba(0,0,0,0.1)',
+}}>
+        
+      <div style={{
         display : 'flex',
         alignItems : 'center',
         justifyContent : 'space-between',
+    
         
       }}>
         <div style={{
@@ -92,6 +105,9 @@ function App() {
 
 
       </div>
+
+      </div>
+
 
       <div style={{
         display : 'flex',
@@ -821,7 +837,7 @@ function App() {
           display : 'flex',
           flexDirection : 'column',
           gap : 24,
-          // backgroundColor: 'red',
+          overflow: 'hidden',
           
         }}>
 
@@ -882,7 +898,23 @@ function App() {
 
           </div>
 
-          <Graph/>
+              <div style={{
+                width: '100%',
+                overflowX: isMobile ? 'auto' : 'hidden',
+                flex: 1,
+                position: 'relative',
+                minHeight: 300 ,
+               
+              }}>
+                <div style={{
+                  width: isMobile ? '200%' : '100%',
+                  height: '100%',
+                  position: 'relative',
+                  overflowY : 'hidden'
+                }}>
+                  <Graph />
+                </div>
+              </div>
             <div>
        
         </div>
