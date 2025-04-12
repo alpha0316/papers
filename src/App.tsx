@@ -937,7 +937,7 @@ function App() {
         alignItems : 'center',
         position : 'fixed',
         bottom : isMobile ? '2%' : '5%',
-        left : isMobile? '7%' : '32%'
+        left : isMobile? '6%' : '32%'
       }}>
 
         <div style={{
@@ -988,7 +988,7 @@ function App() {
         </svg>
         </div>
         <div style={{
-          display : isMobile? 'none' : 'flex',
+          display : 'flex',
           gap : 12,
           alignItems : 'center',
           padding : 10,
@@ -1010,7 +1010,7 @@ function App() {
             <p style={{
               margin : 0,
               fontSize : 12
-            }}>1 Apr- 31 Apr</p>
+            }}>1Apr-31Apr</p>
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
               <path d="M4 8H12" stroke="#1C76FD" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
               <path d="M8 12V4" stroke="#1C76FD" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -1020,7 +1020,8 @@ function App() {
         <div style={{
           height : 30,
           // width : 1,
-          border : '1px solid rgba(0,0,0,0.1)'
+          border : '1px solid rgba(0,0,0,0.1)',
+          display : isMobile? 'none' : 'flex'
         }}></div>
 
         <div style={{
@@ -1029,7 +1030,7 @@ function App() {
               backgroundColor : '#1C76FD',
               color : 'white',
               borderRadius : 16,
-              display : 'flex',
+              display : isMobile? 'none' :'flex',
               alignItems : 'center',
         }}>Upload  Statement</div>  
 
